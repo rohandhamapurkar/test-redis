@@ -1,0 +1,16 @@
+{
+  "name": "redis-test-api",
+  "version": "1.0.0",
+  "description": "test project using redis",
+  "main": "app.js",
+  "scripts": {
+    "start": "port=3000 node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "redis": "^2.8.0"
+  }
+}
