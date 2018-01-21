@@ -1,0 +1,86 @@
+{
+	"info": {
+		"name": "Redis Test",
+		"_postman_id": "aa2cd73b-e641-a1d4-f05e-4ef1be3fcd2e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PUT details in HashMap",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\":\"user:rohan\",\n\t\t\"name\":\"Rohan\",\n\t\t\"email\":\"dhamapurkar54@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get hashmap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/user:rohan",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user:rohan"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete key",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\":\"user:rohan\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
